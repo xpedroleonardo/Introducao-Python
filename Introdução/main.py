@@ -176,3 +176,20 @@ text = "Olá Mundo "
 
 # for d in dados.items():  # Exibe a chave e o valor
 #   print(d)
+
+## NÚMEROS ALEATÓRIOS
+
+# import random
+
+# aleatorio = random.randint(0,10)
+# print(aleatorio)
+
+# numero = random.choice(a)  #Escolhe um dos valores da lista
+# print(numero)
+
+## TRATAMENTO DE EXECEÇÕES
+
+try:
+  print(2/0)
+except:
+  print("Não é possível realizar a divisão com 0")
