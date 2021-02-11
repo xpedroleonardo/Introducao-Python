@@ -6,7 +6,8 @@
 
 x = 1
 y = 2
-a = [1,2,3,4,5,6]
+a = [1,2,3,4,5,6] 
+b = ["A","B","C","D","E","F"] 
 text = "Olá Mundo "
 
 ## EXIBE UMA MENSAGEM NA TELA: print()
@@ -189,7 +190,46 @@ text = "Olá Mundo "
 
 ## TRATAMENTO DE EXECEÇÕES
 
-try:
-  print(2/0)
-except:
-  print("Não é possível realizar a divisão com 0")
+# try:
+#   print(2/0)
+# except:
+#   print("Não é possível realizar a divisão com 0")
+
+## LIST COMPREHENSION
+## valores elevados ao ² da lista (a) 
+
+# comList = [i**2 for i in a]
+# print(comList)
+
+# comPares = [i for i in a if i % 2 == 0]
+# print(comPares)
+
+## ENUMERATE
+## Exibe a posição é o nome
+
+# for i, nome in enumerate(b):
+#   print(i,nome)
+
+## MAP
+
+# def dobro(x):
+#   return x*2
+
+# dobrado = list(map(dobro, a))
+# print(dobrado)
+
+## REDUCE
+
+# from functools import reduce
+
+# def soma(x, y):
+#   return x+y
+
+# total = reduce(soma, a)
+# print(total)
+
+## ZIP
+## Concatena listas, e exibe o resultado das duas
+
+for N, L in zip(a,b):
+  print(N,L)
